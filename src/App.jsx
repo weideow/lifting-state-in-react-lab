@@ -4,6 +4,7 @@ import './App.css';
 import IngredientList from './components/IngredientList/IngredientList';
 import BurgerStack from './components/BurgerStack/BurgerStack';
 
+
 const App = () => {
   const availableIngredients = [
     { name: 'Kaiser Bun', color: 'saddlebrown' },
@@ -25,12 +26,12 @@ const App = () => {
     const [stack, setStack] = useState([]);
 
     const addToStack = (ingredient) => {
-      setStack((prevStack) => [...prevStack, ingredient]);
+      setStack((currStack) => [...currStack, ingredient]);
     };
   
     const removeFromStack = (ingredientName) => {
-      setStack((prevStack) =>
-        prevStack.filter((ingredient) => ingredient.name !== ingredientName)
+      setStack((currStack) =>
+        currStack.filter((ingredient) => ingredient.name !== ingredientName)
       );
     };
 

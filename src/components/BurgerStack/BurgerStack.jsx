@@ -1,10 +1,9 @@
 const BurgerStack = ({ ingredients, removeFromStack }) => {
   return (
     <ul>
-      {ingredients.map((ingredient, index) => (
+      {ingredients.map((ingredient) => (
         <li
-          key={index}
-
+          key={ingredient.name}
         >
           {ingredient.name}{' '}
           <button onClick={() => removeFromStack(ingredient.name)}>X</button>
