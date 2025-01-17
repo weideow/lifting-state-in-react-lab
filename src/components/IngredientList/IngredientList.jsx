@@ -3,6 +3,7 @@ const IngredientList = ({ ingredients, addToStack }) => {
     <ul>
       {ingredients.map((ingredient) => (
         <li key={ingredient.name} style={{ backgroundColor: ingredient.color }}>
+          {ingredient.name}
           <button onClick={() => addToStack(ingredient)}>+</button>
         </li>
       ))}

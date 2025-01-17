@@ -5,7 +5,7 @@ const BurgerStack = ({ ingredients, removeFromStack }) => {
         <li
           key={ingredient.name}
         >
-          {ingredient.name}{' '}
+          {ingredient.name}
           <button onClick={() => removeFromStack(ingredient.name)}>X</button>
         </li>
       ))}
